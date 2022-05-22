@@ -24,7 +24,7 @@ android {
         applicationId "com.example.android.mediacontroller"
         minSdkVersion 21
         //noinspection ExpiredTargetSdkVersion
-        targetSdkVersion 29
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
         vectorDrawables.useSupportLibrary = true
@@ -38,11 +38,11 @@ android {
     }
     buildFeatures {
         viewBinding true
-        dataBinding true
+//        dataBinding true
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 }
 
@@ -53,5 +53,5 @@ dependencies {
     implementation "androidx.cardview:cardview:$support_lib_version"
     implementation "androidx.leanback:leanback:$leanback_version"
     implementation "com.google.android.material:material:$material_version"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-rc01"
 }
